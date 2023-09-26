@@ -1,23 +1,23 @@
 import "../index.css";
 import DrumPadButton from "./DrumPadButton";
 
-const DrumPad = () => {
+const DrumPad = ({ buttonOnClick }) => {
   return (
-    <div>
+    <div className="DrumPad">
       <div className="buttonrow">
-        <DrumPadButton>1</DrumPadButton>
-        <DrumPadButton>2</DrumPadButton>
-        <DrumPadButton>3</DrumPadButton>
+        <DrumPadButton value="Q" buttonOnClick={buttonOnClick} />
+        <DrumPadButton value="W" buttonOnClick={buttonOnClick} />
+        <DrumPadButton value="E" buttonOnClick={buttonOnClick} />
       </div>
       <div className="buttonrow">
-        <DrumPadButton></DrumPadButton>
-        <DrumPadButton></DrumPadButton>
-        <DrumPadButton></DrumPadButton>
+        <DrumPadButton value="A" buttonOnClick={buttonOnClick} />
+        <DrumPadButton value="S" buttonOnClick={buttonOnClick} />
+        <DrumPadButton value="D" buttonOnClick={buttonOnClick} />
       </div>
       <div className="buttonrow">
-        <DrumPadButton></DrumPadButton>
-        <DrumPadButton></DrumPadButton>
-        <DrumPadButton></DrumPadButton>
+        <DrumPadButton value="Z" buttonOnClick={buttonOnClick} />
+        <DrumPadButton value="X" buttonOnClick={buttonOnClick} />
+        <DrumPadButton value="C" buttonOnClick={buttonOnClick} />
       </div>
     </div>
   );

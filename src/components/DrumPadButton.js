@@ -1,7 +1,7 @@
 import "../index.css";
 
-const DrumPadButton = () => {
-  return <button></button>;
+const DrumPadButton = ({ value, buttonOnClick }) => {
+  return <button onClick={() => buttonOnClick(value)}>{value}</button>;
 };
 
 export default DrumPadButton;
